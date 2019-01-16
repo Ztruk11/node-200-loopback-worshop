@@ -21,25 +21,25 @@ describe('loopback server', function() {
       });
   });
 
-  it('responds to /api/players', done => {
-    chai
-      .request(server)
-      .get('/api/players')
-      .end((err, res) => {
-        expect(err).not.exist;
-        expect(res).to.have.status(200);
-        done();
-      });
-  });
+  // it('responds to /api/players', done => {
+  //   chai
+  //     .request(server)
+  //     .get('/api/players')
+  //     .end((err, res) => {
+  //       expect(err).not.exist;
+  //       expect(res).to.have.status(200);
+  //       done();
+  //     });
+  // });
 
-  it('responds to /teams', done => {
-    chai
-      .request(server)
-      .get('/api/teams')
-      .end((err, res) => {
-        expect(err).not.exist;
-        expect(res).to.have.status(200);
-        done();
-      });
-  });
+  // it('responds to /teams', done => {
+  //   chai
+  //     .request(server)
+  //     .get('/api/teams')
+  //     .end((err, res) => {
+  //       expect(err).not.exist;
+  //       expect(res).to.have.status(200);
+  //       done();
+  //     });
+  // });
 });
